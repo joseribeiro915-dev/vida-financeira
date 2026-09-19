@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Vida Financeira — site informativo sobre endividamento, organização financeira, crédito e juros.">
+  <title>Vida Financeira | Entenda suas finanças</title>
+  <link rel="icon" href="assets/logo.png" type="image/png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header" id="inicio">
+    <div class="container nav-wrap">
+      <a class="brand" href="#inicio" aria-label="Vida Financeira - início">
+        <img src="assets/logo.png" alt="Logo Vida Financeira" class="brand-logo">
+        <span class="brand-text">
+          <strong>Vida</strong> Financeira
+        </span>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="mainNav" aria-label="Abrir menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="main-nav" id="mainNav" aria-label="Navegação principal">
+        <a href="#inicio">Início</a>
+        <a href="#panorama">Panorama</a>
+        <a href="#problema">Entenda</a>
+        <a href="#dicas">Dicas</a>
+        <a href="#planilha">Planilha</a>
+        <a href="#faq">FAQ</a>
+        <a href="#orientacao">Orientação</a>
+        <button class="theme-toggle" id="themeToggle" type="button" aria-label="Alternar tema">◐</button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero section">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow">INFORMAÇÃO • ORGANIZAÇÃO • EDUCAÇÃO</span>
+          <h1>Entenda suas finanças. <span>Organize sua vida.</span></h1>
+          <p class="hero-lead">
+            Um espaço para compreender o endividamento, conhecer informações sobre o Brasil
+            e encontrar orientações práticas para lidar melhor com o dinheiro.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#dicas">Conheça as dicas</a>
+            <a class="btn btn-secondary" href="#panorama">Ver panorama</a>
+          </div>
+          <p class="disclaimer">
+            Projeto acadêmico. Os indicadores desta versão foram preenchidos com dados do Mapa da Inadimplência
+            e Negociação de Dívidas da Serasa (agosto de 2026). Outras fontes poderão ser adicionadas
+            para complementar o panorama brasileiro.
+          </p>
+        </div>
+
+        <div class="hero-card">
+          <div class="hero-card-top">
+            <span>COMECE POR AQUI</span>
+            <span class="status-dot" aria-hidden="true"></span>
+          </div>
+          <h2>Antes de tomar uma decisão financeira, procure informação.</h2>
+          <div class="mini-checks">
+            <div><span>01</span> Saiba quanto entra.</div>
+            <div><span>02</span> Identifique quanto sai.</div>
+            <div><span>03</span> Entenda juros e parcelas.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section spreadsheet-section" id="planilha">
+      <div class="container">
+        <div class="spreadsheet-card">
+          <div class="spreadsheet-icon" aria-hidden="true"><span>X</span></div>
+          <div class="spreadsheet-copy">
+            <span class="section-kicker">FERRAMENTA PRÁTICA</span>
+            <h2>Planilha de Controle Financeiro</h2>
+            <p>Abra a planilha para registrar receitas, despesas e organizar sua vida financeira.</p>
+          </div>
+          <a class="btn btn-spreadsheet" href="assets/planilha-controle-financeiro.xls" download>
+            Acessar planilha →
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section light" id="panorama">
+      <div class="container">
+        <div class="section-heading">
+          <span class="section-kicker">02 • PANORAMA</span>
+          <h2>O endividamento no Brasil</h2>
+          <p>
+            Dados do Mapa da Inadimplência e Negociação de Dívidas da Serasa, referente a
+            agosto de 2026. Os números abaixo são apresentados com período e fonte para facilitar
+            a leitura e a conferência.
+          </p>
+        </div>
+
+        <div class="data-grid">
+          <article class="data-card">
+            <span class="data-number">83,9 mi</span>
+            <h3>Negativados no Brasil</h3>
+            <p>O Mapa da Serasa registrou 83,9 milhões de consumidores negativados em agosto de 2026, o maior número de inadimplentes da série histórica apresentada.</p>
+            <div class="data-meta">Público: consumidores negativados • Período: ago/2026 • Fonte: Serasa</div>
+          </article>
+          <article class="data-card">
+            <span class="data-number">35,8%</span>
+            <h3>Faixa de 41 a 60 anos</h3>
+            <p>É a maior faixa etária entre os consumidores com nome restrito no recorte apresentado pela Serasa.</p>
+            <div class="data-meta">Público: consumidores negativados • Período: ago/2026 • Fonte: Serasa</div>
+          </article>
+          <article class="data-card">
+            <span class="data-number">R$ 741</span>
+            <h3>Acordo médio</h3>
+            <p>Foi o valor médio de cada acordo realizado na plataforma de renegociação de dívidas durante agosto.</p>
+            <div class="data-meta">Público: acordos no Serasa Limpa Nome • Período: ago/2026 • Fonte: Serasa</div>
+          </article>
+        </div>
+
+        <div class="source-note">
+          <strong>Fonte principal:</strong>
+          <a class="source-link" href="https://www.serasa.com.br/limpa-nome-online/blog/mapa-da-inadimplencia-e-renogociacao-de-dividas-no-brasil/" target="_blank" rel="noopener noreferrer">
+            Mapa da Inadimplência e Negociação de Dívidas no Brasil — Serasa
+          </a>.
+          Os indicadores têm recortes diferentes: número de negativados, distribuição por faixa
+          etária e valor médio de acordo. A mesma publicação informa ainda mais de R$ 11,8 bilhões
+          em descontos concedidos em agosto e mais de R$ 1,1 trilhão em ofertas disponíveis para negociação.
+        </div>
+
+        <div class="trend-card">
+          <div class="trend-head">
+            <div>
+              <span class="panel-title-dark">EVOLUÇÃO 2026</span>
+              <h3>Consumidores negativados, mês a mês</h3>
+            </div>
+            <span class="trend-source">Fonte: Serasa • jan–ago/2026</span>
+          </div>
+          <div class="bars" aria-label="Evolução mensal de consumidores negativados em milhões">
+            <div class="bar-wrap"><span class="bar-value">81,3 mi</span><div class="bar" style="height:52%"></div><span>Jan</span></div>
+            <div class="bar-wrap"><span class="bar-value">81,7 mi</span><div class="bar" style="height:58%"></div><span>Fev</span></div>
+            <div class="bar-wrap"><span class="bar-value">82,8 mi</span><div class="bar" style="height:72%"></div><span>Mar</span></div>
+            <div class="bar-wrap"><span class="bar-value">83,3 mi</span><div class="bar" style="height:80%"></div><span>Abr</span></div>
+            <div class="bar-wrap"><span class="bar-value">83,5 mi</span><div class="bar" style="height:84%"></div><span>Mai</span></div>
+            <div class="bar-wrap"><span class="bar-value">83,7 mi</span><div class="bar" style="height:88%"></div><span>Jun</span></div>
+            <div class="bar-wrap"><span class="bar-value">83,9 mi</span><div class="bar" style="height:94%"></div><span>Jul</span></div>
+            <div class="bar-wrap"><span class="bar-value">83,9 mi</span><div class="bar" style="height:94%"></div><span>Ago</span></div>
+          </div>
+          <p class="trend-caption">
+            A série publicada pela Serasa mostra crescimento de 81,3 milhões em janeiro para
+            83,9 milhões em agosto de 2026.
+          </p>
+        </div>
+        <p class="source-direct">Fonte dos indicadores: <a href="https://www.serasa.com.br/limpa-nome-online/blog/mapa-da-inadimplencia-e-renogociacao-de-dividas-no-brasil/" target="_blank" rel="noopener noreferrer">Serasa — Mapa da Inadimplência e Negociação de Dívidas no Brasil</a>.</p>
+        <p class="source-direct"><strong>Três fontes já incorporadas:</strong> Serasa, G1/CNC (Peic) e Senado Notícias (com dados atribuídos à CNC/Peic e ao Banco Central). Os períodos de medição permanecem identificados para evitar comparações indevidas.</p>
+
+        <div class="indicator-table-wrap">
+          <div class="indicator-table-head">
+            <div>
+              <span class="panel-title-dark">QUADRO DE FONTES</span>
+              <h3>Indicadores e recortes utilizados</h3>
+            </div>
+            <span class="trend-source">Atenção aos diferentes conceitos e períodos</span>
+          </div>
+          <div class="table-scroll">
+            <table class="indicator-table">
+              <thead>
+                <tr>
+                  <th>Fonte</th>
+                  <th>Indicador</th>
+                  <th>Valor</th>
+                  <th>Período</th>
+                  <th>Público / recorte</th>
+                  <th>O que mede</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Serasa</td>
+                  <td>Consumidores negativados</td>
+                  <td><strong>83,9 milhões</strong></td>
+                  <td>Agosto/2026</td>
+                  <td>Consumidores com nome restrito</td>
+                  <td>Número de pessoas negativadas segundo o Mapa da Serasa.</td>
+                </tr>
+                <tr>
+                  <td>G1 / CNC (Peic)</td>
+                  <td>Famílias endividadas</td>
+                  <td><strong>82%</strong></td>
+                  <td>Julho/2026</td>
+                  <td>Famílias pesquisadas pela Peic</td>
+                  <td>Percentual de famílias que declararam possuir algum tipo de dívida.</td>
+                </tr>
+                <tr>
+                  <td>Senado / CNC (Peic)</td>
+                  <td>Famílias com contas em atraso</td>
+                  <td><strong>29,7%</strong></td>
+                  <td>Abril/2026</td>
+                  <td>Famílias pesquisadas pela Peic</td>
+                  <td>Percentual de famílias que declararam possuir contas em atraso.</td>
+                </tr>
+                <tr>
+                  <td>Banco Central</td>
+                  <td>Comprometimento de renda</td>
+                  <td><strong>29,7%</strong></td>
+                  <td>Fev/2026</td>
+                  <td>Famílias e dívidas no SFN</td>
+                  <td>Relação entre pagamentos esperados da dívida e a renda mensal das famílias.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="table-footnote">
+            <strong>Importante:</strong> esses indicadores não são equivalentes. “Consumidores negativados”
+            (Serasa) e “famílias endividadas” (Peic) usam bases e conceitos diferentes. Por isso, o site
+            apresenta fonte, período e recorte de cada número separadamente.
+          </p>
+        </div>
+
+        <div class="second-source">
+          <div>
+            <span class="section-kicker">FONTE 02 • CNC / PEIC</span>
+            <h3>Endividamento das famílias chega a 82% em julho de 2026</h3>
+            <p>
+              A Pesquisa de Endividamento e Inadimplência do Consumidor (Peic), da CNC,
+              apontou que <strong>82% das famílias</strong> tinham algum tipo de dívida em julho de 2026.
+              A inadimplência ficou em <strong>29,8%</strong>, e as famílias comprometiam em média
+              <strong>29,5% da renda</strong> com dívidas. A pesquisa ouviu <strong>18 mil famílias</strong>
+              de todo o país.
+            </p>
+            <p class="source-meta">
+              Publicação: 06/08/2026 • Período medido: julho/2026 • Fonte: CNC/Peic
+            </p>
+          </div>
+          <a class="source-link-btn" href="https://g1.globo.com/economia/noticia/2026/08/06/endividamento-das-familias-bate-recorde-pelo-6o-mes-seguido-e-chega-a-82percent-diz-cnc.ghtml" target="_blank" rel="noopener noreferrer">
+            Ler matéria no G1 →
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+
+        <div class="second-source senate-source">
+          <div>
+            <span class="section-kicker">FONTE 03 • SENADO NOTÍCIAS / CNC / BANCO CENTRAL</span>
+            <h3>Endividamento e comprometimento da renda</h3>
+            <p>
+              Em abril de 2026, <strong>80,9% das famílias</strong> declararam possuir algum tipo de dívida.
+              No mesmo mês, <strong>29,7%</strong> das famílias tinham contas em atraso e
+              <strong>12,3%</strong> declararam não ter condições de quitar suas dívidas.
+              A matéria também informa que a parcela de renda comprometida com dívidas chegou a
+              <strong>29,7% no fim de 2025</strong>, segundo dados do Banco Central.
+            </p>
+            <p class="source-meta">
+              Publicação: 29/05/2026 • Períodos medidos: abr/2026 e fim de 2025 • Fontes citadas: CNC/Peic e Banco Central
+            </p>
+          </div>
+          <a class="source-link-btn" href="https://www12.senado.leg.br/noticias/infomaterias/2026/05/dividas-em-recorde-assombram-as-familias-brasileiras" target="_blank" rel="noopener noreferrer">
+            Ler matéria no Senado →
+          </a>
+        </div>
+
+    <section class="section" id="problema">
+      <div class="container two-col">
+        <div>
+          <span class="section-kicker">03 • ENTENDA O PROBLEMA</span>
+          <h2>Endividamento não é sinônimo de inadimplência</h2>
+          <p>
+            Endividamento pode estar relacionado a compromissos financeiros assumidos, como
+            parcelas, empréstimos, financiamentos e outras formas de crédito.
+          </p>
+          <p>
+            Inadimplência está relacionada ao não pagamento de uma obrigação dentro do prazo
+            estabelecido. São conceitos próximos, mas não são a mesma coisa.
+          </p>
+        </div>
+
+        <div class="factor-panel">
+          <span class="panel-title">Fatores que podem contribuir</span>
+          <div class="factor-grid">
+            <div class="factor"><b>01</b><strong>Crédito</strong><span>Uso sem planejamento.</span></div>
+            <div class="factor"><b>02</b><strong>Juros</strong><span>Custo maior da dívida.</span></div>
+            <div class="factor"><b>03</b><strong>Impulso</strong><span>Compras sem avaliação.</span></div>
+            <div class="factor"><b>04</b><strong>Renda</strong><span>Mudanças no orçamento.</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section light" id="dicas">
+      <div class="container">
+        <div class="section-heading">
+          <span class="section-kicker">04 • DICAS PRÁTICAS</span>
+          <h2>Pequenas mudanças começam pela informação</h2>
+          <p>
+            As dicas abaixo são um primeiro rascunho. Na versão final, serão revisadas pela equipe
+            e acompanhadas das referências adequadas quando necessário.
+          </p>
+        </div>
+
+        <div class="filter-row" role="group" aria-label="Filtrar dicas">
+          <button class="filter-btn active" data-filter="todos">Todas</button>
+          <button class="filter-btn" data-filter="organizacao">Organização</button>
+          <button class="filter-btn" data-filter="credito">Crédito</button>
+          <button class="filter-btn" data-filter="juros">Juros</button>
+          <button class="filter-btn" data-filter="consumo">Consumo</button>
+        </div>
+
+        <div class="tips-grid" id="tipsGrid">
+          <article class="tip-card" data-category="organizacao">
+            <span class="tip-index">01</span>
+            <h3>Organize suas contas</h3>
+            <p>Registre receitas, despesas fixas e compromissos para visualizar o orçamento.</p>
+          </article>
+          <article class="tip-card" data-category="organizacao">
+            <span class="tip-index">02</span>
+            <h3>Identifique os gastos</h3>
+            <p>Observe para onde o dinheiro está indo e separe necessidades de despesas adiáveis.</p>
+          </article>
+          <article class="tip-card" data-category="credito">
+            <span class="tip-index">03</span>
+            <h3>Cuidado com o crédito</h3>
+            <p>Antes de parcelar, verifique o custo total e o impacto das parcelas no orçamento.</p>
+          </article>
+          <article class="tip-card" data-category="juros">
+            <span class="tip-index">04</span>
+            <h3>Entenda os juros</h3>
+            <p>Compare o custo da operação e entenda quanto a dívida pode representar ao longo do tempo.</p>
+          </article>
+          <article class="tip-card" data-category="consumo">
+            <span class="tip-index">05</span>
+            <h3>Evite compras por impulso</h3>
+            <p>Faça uma pausa antes de comprar e confira se a despesa cabe no seu planejamento.</p>
+          </article>
+          <article class="tip-card" data-category="organizacao">
+            <span class="tip-index">06</span>
+            <h3>Defina prioridades</h3>
+            <p>Organize primeiro as despesas essenciais e depois avalie gastos não prioritários.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="faq">
+      <div class="container faq-layout">
+        <div class="section-heading">
+          <span class="section-kicker">05 • FAQ</span>
+          <h2>Perguntas frequentes</h2>
+          <p>
+            Clique em uma pergunta para abrir a resposta. Esta é uma das interações JavaScript
+            previstas no projeto.
+          </p>
+        </div>
+
+        <div class="faq-list">
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>O que é inadimplência?</span><span>+</span>
+            </button>
+            <div class="faq-answer" hidden>
+              <p>É a situação em que uma obrigação financeira não foi paga dentro do prazo estabelecido.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>Como saber quanto estou gastando?</span><span>+</span>
+            </button>
+            <div class="faq-answer" hidden>
+              <p>Comece registrando receitas e despesas e organize os gastos por categorias para visualizar o orçamento.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>O cartão de crédito pode aumentar minhas dívidas?</span><span>+</span>
+            </button>
+            <div class="faq-answer" hidden>
+              <p>O cartão é uma forma de crédito. O impacto depende do uso, das condições da operação e da capacidade de pagamento.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>Onde procurar orientação confiável?</span><span>+</span>
+            </button>
+            <div class="faq-answer" hidden>
+              <p>Consulte instituições e publicações que apresentem a origem dos dados e as condições da pesquisa. Os links serão conferidos na etapa de pesquisa.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section light" id="orientacao">
+      <div class="container">
+        <div class="section-heading">
+          <span class="section-kicker">06 • ORIENTAÇÃO</span>
+          <h2>Onde buscar informações</h2>
+          <p>
+            A atividade recomenda consultar fontes que produzam ou apresentem os dados de forma verificável.
+          </p>
+        </div>
+
+        <div class="source-grid">
+          <article class="source-card">
+            <div class="source-icon">BC</div>
+            <h3>Banco Central</h3>
+            <p>Materiais e informações sobre educação e sistema financeiro.</p>
+            <a class="source-link" href="https://www.serasa.com.br/limpa-nome-online/blog/mapa-da-inadimplencia-e-renogociacao-de-dividas-no-brasil/" target="_blank" rel="noopener noreferrer">Ver publicação</a>
+          </article>
+          <article class="source-card">
+            <div class="source-icon">SE</div>
+            <h3>Serasa</h3>
+            <p>Conteúdos e levantamentos relacionados a crédito e inadimplência.</p>
+            <a class="source-link" href="https://www.serasa.com.br/limpa-nome-online/blog/mapa-da-inadimplencia-e-renogociacao-de-dividas-no-brasil/" target="_blank" rel="noopener noreferrer">Ver publicação</a>
+          </article>
+          <article class="source-card">
+            <div class="source-icon">CNC</div>
+            <h3>CNC / PEIC + G1</h3>
+            <p>Dados da Pesquisa de Endividamento e Inadimplência do Consumidor, divulgados e contextualizados pelo G1.</p>
+            <a class="source-link" href="https://g1.globo.com/economia/noticia/2026/08/06/endividamento-das-familias-bate-recorde-pelo-6o-mes-seguido-e-chega-a-82percent-diz-cnc.ghtml" target="_blank" rel="noopener noreferrer">Ler matéria</a>
+          </article>
+        </div>
+
+
+          <article class="source-card">
+            <div class="source-icon">BC</div>
+            <h3>Banco Central</h3>
+            <p>Série oficial sobre comprometimento de renda das famílias com o serviço da dívida no Sistema Financeiro Nacional.</p>
+            <a class="source-link" href="https://dadosabertos.bcb.gov.br/dataset/29034-comprometimento-de-renda-das-familias-com-o-servico-da-divida-com-o-sistema-financeiro-nacion" target="_blank" rel="noopener noreferrer">Ver dados oficiais</a>
+          </article>
+
+        <div class="final-note">
+          <strong>Atualização do conteúdo:</strong> setembro/2026
+          <span>•</span>
+          <strong>Versão:</strong> 1.2 — quadro de fontes e indicadores revisado
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-wrap">
+      <div>
+        <span class="footer-brand">Vida Financeira</span>
+        <p>Informação para uma vida financeira mais organizada.</p>
+      </div>
+      <div>
+        <span>Projeto acadêmico — SENAI</span>
+        <small>Primeira versão para desenvolvimento e testes.</small>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" aria-label="Voltar ao topo">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
